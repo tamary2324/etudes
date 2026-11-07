@@ -1,0 +1,9 @@
+    1) u appartient a L(G) <=> S=>*u <=> t[n][0][0] == true
+    2) t[0][d][i] == true <=> Xi =>* epsilon
+    3) t[1][d][i] == true <=> Xi =>* u_d
+    4) t[l][d][i] == true <=> il existe j,k, 0<p<l, Xi == Xj Xk, t[p][d][j] == true, t[l-p][d+p][k] == true
+    5) boucle sur 0<=l<=n -> 0<=d<=n-l-1 -> 0<=i<=k-1 (avec k le nb de regle2) 
+           pour l= 0, 1 voir question 2/3)
+           pour l>1 voir 4)
+       complexité en O(kn³)
+
